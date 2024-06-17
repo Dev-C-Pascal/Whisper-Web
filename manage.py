@@ -3,6 +3,8 @@
 import os
 import sys
 
+DISABLE_COLLECTSTATIC = 1
+
 
 def main():
     """Run administrative tasks."""
@@ -17,7 +19,6 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+
 if __name__ == '__main__':
     main()
-    DISABLE_COLLECTSTATIC = 1
-
