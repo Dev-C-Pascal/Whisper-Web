@@ -31,6 +31,11 @@ ALLOWED_HOSTS = [
 
 DISABLE_COLLECTSTATIC = os.getenv('DISABLE_COLLECTSTATIC', False)
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://whisper-web-8mrp.onrender.com',
+    'http://127.0.0.1:8000',
+]
+
 
 # Application definition
 
