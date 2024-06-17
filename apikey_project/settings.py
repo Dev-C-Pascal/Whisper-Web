@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-7=7xw-i%n^i=m(p@bm#1q06n!qmvp*ezwd8$=$&_12x05m1l1&
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+DISABLE_COLLECTSTATIC = os.getenv('DISABLE_COLLECTSTATIC', False)
 
 
 # Application definition

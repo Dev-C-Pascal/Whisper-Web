@@ -3,7 +3,7 @@
 import os
 import sys
 
-DISABLE_COLLECTSTATIC = 1
+# DISABLE_COLLECTSTATIC = 1
 
 
 def main():
