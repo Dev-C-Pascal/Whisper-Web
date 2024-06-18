@@ -97,10 +97,14 @@ WSGI_APPLICATION = 'apikey_project.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://whiper_user:your_password@localhost:5432/whiper',
         conn_max_age=600
     )
 }
+# Database documentation https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
