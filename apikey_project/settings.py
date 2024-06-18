@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'whisper-web-8mrp.onrender.com',
+    '127.0.0.1',
+    'https://whisper-web-8mrp.onrender.com',
 ]
 
 DISABLE_COLLECTSTATIC = os.getenv('DISABLE_COLLECTSTATIC', False)
@@ -35,7 +37,8 @@ CSRF_TRUSTED_ORIGINS = [
     'https://whisper-web-8mrp.onrender.com',
     'http://127.0.0.1:8000',
 ]
-
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
 
 # Application definition
 
