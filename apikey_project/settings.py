@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7=7xw-i%n^i=m(p@bm#1q06n!qmvp*ezwd8$=$&_12x05m1l1&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'whisper-web-8mrp.onrender.com',
